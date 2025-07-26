@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snowdon23 Admin Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f6f6; color: #333; }
+    header { background: #4b0082; color: white; text-align: center; padding: 1.5rem; position: relative; }
+    header a.logout {
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      background: white;
+      color: #4b0082;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    section { max-width: 1000px; margin: auto; padding: 2rem 1rem; }
+    h2 { color: #4b0082; }
+    iframe { border: 1px solid #ccc; background: transparent; width: 100%; height: 533px; }
+    .buttons { text-align: center; margin-bottom: 2rem; }
+    .buttons a {
+      display: inline-block;
+      background: #4b0082;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <p>Project Cost Overview - Snowdon23 Resource Ltd.</p>
+    <a class="logout" href="login.html">Logout</a>
+  </header>
+  <section>
+    <div class="buttons">
+      <a href="submit_project_custom.html">Submit New Project (Custom)</a>
+      <a href="https://airtable.com/appdOzspzaE5w0Caq/shrUbvbkppnUDCN4z" target="_blank">Submit via Airtable</a>
+    </div>
+    <h2>Live Project Dashboard</h2>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/appdOzspzaE5w0Caq/shrUbvbkppnUDCN4z" frameborder="0" onmousewheel=""></iframe>
+  </section>
+</body>
+</html>
